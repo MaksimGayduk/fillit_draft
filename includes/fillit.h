@@ -17,5 +17,6 @@
 #include "reader.h"
 #include "input_checker.h"
 #include "transformer.h"
+#include "solver.h"
 
 #endif

@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   board_funcs.h                                      :+:      :+:    :+:   */
+/*   solver.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgayduk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/01 18:04:42 by mgayduk           #+#    #+#             */
-/*   Updated: 2017/12/01 18:08:16 by mgayduk          ###   ########.fr       */
+/*   Created: 2017/12/02 15:32:16 by mgayduk           #+#    #+#             */
+/*   Updated: 2017/12/02 16:30:49 by mgayduk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BOARD_FUNCS_H
-# define BOARD_FUNCS_H
+#ifndef SOLVER_H
+# define SOLVER_H
 
-int     get_initial_size(int tet_num);
-void    print_board(char **board);
-void    free_board(char **board);
-char    **create_board(int board_size);
-char	**dup_board(char **board, int board_size);
+#include "transformer.h"
+#include "board_funcs.h"
+
+void	solve_problem(t_tetro *tetro_list, int tet_num);
 
 #endif
